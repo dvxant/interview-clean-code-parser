@@ -15,7 +15,7 @@ public class Parser {
         return file;
     }
 
-    public String getContent() throws IOException {
+    public String parseContent() throws IOException {
         FileInputStream i = new FileInputStream(file);
         String output = "";
         int data;
@@ -25,7 +25,7 @@ public class Parser {
         return output;
     }
 
-    public String getContentWithoutUnicode() throws IOException {
+    public String parseContentWithoutUnicode() throws IOException {
         FileInputStream i = new FileInputStream(file);
         String output = "";
         int data;
